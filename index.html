@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hackathon</title>
+</head>
+<body>
+
+    <div class="main">
+      <div class="img_div">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+      <div class="calc_body">
+        <div class="first_div">
+            <div>Bill</div>
+            <input type="number" id="bill"/>
+            <p>Select Tip %</p>
+            <div class="btns">
+              <button class="percent" value="0.05" onclick="calc(0.05)"> 5%</button>
+              <button class="percent" value="0.1" onclick="calc(0.1)"> 10%</button>
+              <button class="percent" value="0.15" onclick="calc(0.15)"> 15%</button>
+              <button class="percent" value="0.25" onclick="calc(0.25)"> 25%</button>
+              <button class="percent" value="0.5" onclick="calc(0.5)" > 50%</button>
+              
+            </div>
+            <div class="people_div">
+              <div>Number of People </div>
+              <input type="number" id="people"/>
+    
+            </div>
+           
+            
+          
+        </div>
+        <div class="second_div">
+          <div class="first_amount">
+            <p class="tip_span">
+              <span>Tip Amount </span>
+               <span class="per_person"> / person</span>
+            
+            </p>
+            <span class="tip_Amount">$0.00</span>
+          </div>
+          <div class="first_amount">
+            <p class="tip_span">
+              <span>Total </span>
+               <span class="per_person"> / person</span>
+            
+            </p>
+            <span class="total">$0.00</span>
+          </div>
+          <button id="reset" onclick="reset()">Reset</button>
+        </div>
+        
+        <!-- Number of people<input type="number" id="people"/></br><br>
+        
+        <div  id="tipAmount">
+         --> 
+        <!-- </div> -->
+      </div>
+      
+    </div>
+  
+  <script src="tip.js"></script>
+</body>
+</html>
